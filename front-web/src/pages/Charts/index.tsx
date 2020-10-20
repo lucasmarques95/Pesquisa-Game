@@ -9,13 +9,11 @@ import { buildBarSeries, getPlatformChartData, getGenderChartData } from './help
 type PieChartData = {
     labels: string[];
     series: number[];
-
 }
 
 type BarChartData = {
     x: string;
-    y: number;
-    
+    y: number;   
 }
 
 const initialPieData = {
@@ -23,7 +21,7 @@ const initialPieData = {
     series: []
 }
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://pesquisagame.herokuapp.com';
 
 const Charts = () => {
     const [barChartData, setBarChartData] = useState<BarChartData[]>([]);
